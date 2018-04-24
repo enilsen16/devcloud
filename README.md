@@ -1,7 +1,6 @@
 # DevCloud
 
-A collection
-
+A collection, currently a work in progress.
 
 From an instance -
 
