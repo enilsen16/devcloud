@@ -5,11 +5,11 @@ set -e
 
 # update ubuntu packages
 sudo apt-get update
-sudo apt-get full-upgrade
+sudo apt-get full-upgrade -y
 sudo apt-get autoremove
 
 # Add postgres
-sudo apt-get install postgresql postgresql-contrib libpq-dev
+sudo apt-get install postgresql postgresql-contrib libpq-dev -y
 sudo -u postgres psql postgres
 \password postgres
 \q
