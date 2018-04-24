@@ -22,8 +22,8 @@ chmod +x ~/.kerl/kerl
 ~/.kerl/kerl update releases
 ~/.kerl/kerl build git https://github.com/erlang/otp.git maint maint
 ~/.kerl/kerl install maint ~/.kerl/maint
-~/.kerl/maint/activate
-~/.kerl cleanup all
+. /home/ubuntu/.kerl/maint/activate
+~/.kerl/kerl cleanup all
 
 # Install elixir
 git clone https://github.com/elixir-lang/elixir.git ~/.elixir
