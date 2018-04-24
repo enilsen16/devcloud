@@ -10,9 +10,7 @@ sudo apt-get autoremove
 
 # Add postgres
 sudo apt-get install postgresql postgresql-contrib libpq-dev -y
-sudo -u postgres psql postgres
-\password postgres
-\q
+sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD 'postgres';"
 
 # Install Kerl/Erlang
 mkdir ~/.kerl
